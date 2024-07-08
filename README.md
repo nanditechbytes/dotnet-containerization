@@ -22,11 +22,11 @@ The Dockerfile is divided into five stages:
 2. **Navigate inside the repository**
 3. **Command to build the image**
 ```
-docker build -t your-app-name --build-arg  CERT_PASSWORD=yourpassword .
+docker build --buid-arg CERT_PASSWORD=yourpassword -t sampledotnetapp .
 ```
 4. **Command to run the container**
 ```
-docker run -d -p 443:443 --name your-container-name your-app-name
+docker run -e CERT_PASSWORD=yourpassword -p 443:443 sampledotnetapp
 ```
 5. **Access the app on your browser using
 ```
