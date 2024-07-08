@@ -28,7 +28,7 @@ docker build --buid-arg CERT_PASSWORD=yourpassword -t sampledotnetapp .
 ```
 docker run -e CERT_PASSWORD=yourpassword -p 443:443 sampledotnetapp
 ```
-5. **Access the app on your browser using
+5. **Access the app on your browser using**
 ```
 https://localhost:443
 ```
